@@ -3,6 +3,11 @@ import pandas as pd
 import numpy as np
 import pickle
 
+# Tambahkan semua class model yang digunakan
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.naive_bayes import Gaussian
+
 # Load semua model
 with open('model_knn.pkl', 'rb') as f:
     model_knn = pickle.load(f)
